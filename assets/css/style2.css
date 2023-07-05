@@ -31,9 +31,6 @@
     --bg-forth: linear-gradient(0deg, #6A3DAD 0%, #6A3DAD 100%), linear-gradient(90deg, #2D367D 0%, #384CB1 100%);
     --bg-fifth: linear-gradient(0deg, #ED5C83 0%, #ED5C83 100%), linear-gradient(90deg, #2D367D 0%, #384CB1 100%);
     --bg-sixth: linear-gradient(0deg, #EFB93B 0%, #EFB93B 100%), #D9D9D9;
-
-
-
 }
 
 .fs-2xsm {
@@ -130,7 +127,49 @@
 }
 
 /* ================================= */
+/* =======Section Forth============= */
+.read-white-paper-btn {
+    padding: 11px 24px;
+    border-radius: 50px;
+    background-color: white;
+    transition: all 500ms linear;
+}
 
+.read-white-paper-btn:hover {
+    background-color: #FFBA3B;
+    color: white;
+}
+
+.white-paper-arrow-abs {
+    position: absolute;
+    left: 31%;
+    top: 56%;
+}
+
+.arrow-right-abs {
+    position: absolute;
+    right: 1%;
+    top: 10%;
+}
+
+.animation-css {
+    animation-name: up-down;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes up-down {
+    0% {
+        transform: translatey(-10px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+/* ========End================ */
 /* ===========Fifth Section=========== */
 .roadmap-container {
     max-width: 1360px;
@@ -145,6 +184,48 @@
     height: 180px;
     padding: 8px 12px;
     border-radius: 14.91px;
+    cursor: pointer;
+    transition: all 300ms linear;
+}
+
+.roadmap-box:hover {
+    opacity: 1 !important;
+}
+
+.roadmap-left-abs {
+    position: absolute;
+    left: 0;
+    top: -2%;
+}
+
+.roadmap-right-abs {
+    position: absolute;
+    right: 0;
+    bottom: -40%;
+    z-index: -1;
+}
+
+.roadmap-arrow-abs {
+    position: absolute;
+    right: 3%;
+    top: 5%;
+}
+
+.arrow {
+    animation-name: arrow;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes arrow {
+    0% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(10deg);
+    }
 }
 
 /* ==========End================= */
@@ -165,11 +246,33 @@
     padding: 11px 21px;
     background-color: #ffffff;
     border-radius: 50px;
+    transition: all 500ms linear;
+}
+
+.buy-wuao:hover {
+    background-color: #FFBA3B;
+    color: white;
 }
 
 /* ============End============== */
 /* ========Seventh Sextion========= */
+.tokenomics-left-abs {
+    position: absolute;
+    left: 0;
+    top: -4%;
+}
 
+.tokenomics-right-abs {
+    position: absolute;
+    right: 0;
+    bottom: -34%;
+}
+
+.tokenomics-arrow-abs {
+    position: absolute;
+    left: 1.5%;
+    bottom: 17%;
+}
 
 /* ===============End=============== */
 /* ===========Eight Section============ */
@@ -180,9 +283,33 @@
     background-position: center;
 }
 
-
 /* ==============Section end====== */
 /* =========Footer Start============ */
+footer ul li a {
+    position: relative;
+    transition: all 500ms linear;
+}
+
+footer ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: -3px;
+    background-color: #FFBA3B;
+    transform: scaleX(0);
+    transition: all 500ms linear;
+}
+
+footer ul li a:hover {
+    color: #FFBA3B;
+}
+
+footer ul li a:hover::after {
+    transform: scaleX(1);
+}
+
 .social-icon-box {
     width: 30px;
     height: 30px;
@@ -191,6 +318,16 @@
     justify-content: center;
     align-items: center;
     background-color: #FFBA3B;
+    transition: all 500ms linear;
+}
+
+.social-icon-box:hover {
+    background-color: white;
+    box-shadow: 0px 3px 3px 4px rgba(255, 186, 59, 1);
+}
+
+.social-icon-box:hover path {
+    fill: #FFBA3B;
 }
 
 .line-height {
@@ -201,6 +338,7 @@
     position: absolute;
     left: 0;
     top: -20%;
+    z-index: -1;
 }
 
 .right-shadow-abs {
@@ -212,7 +350,7 @@
 .arrow-abs {
     position: absolute;
     left: 22%;
-    bottom: 0;
+    bottom: 3%;
 }
 
 /* ==========Footer End============= */
@@ -243,8 +381,29 @@
     }
 }
 
+@media (max-width:768) {
+    :root {
+        /* font-size */
+        --fs-xl: 40px;
+        --fs-xxl: 55px;
+    }
+}
+
 @media (max-width:576px) {
     .w-sm-100 {
         width: 100%;
+    }
+
+    :root {
+        /* font-size */
+        --fs-md: 22px;
+        --fs-lg: 24px;
+        --fs-xl: 25px;
+        --fs-xxl: 40px;
+    }
+
+    .time-box {
+        padding: 7px 10px 8px 10px;
+        line-height: 100%;
     }
 }
