@@ -1,7 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     text-decoration: none !important;
     list-style-type: none !important;
     box-sizing: border-box !important;
+}
+
+
+/* ==========Root============ */
+:root {
+    /* font-size */
+    --fs-2xsm: 14px;
+    --fs-xsm: 16px;
+    --fs-sm: 18px;
+    --fs-xmd: 20px;
+    --fs-md: 28px;
+    --fs-lg: 30px;
+    --fs-xl: 50px;
+    --fs-xxl: 65px;
+    --weight-black: 900;
+    --text-ffffff: #ffffff;
+    --text-32352c: #32352c;
+    --text-666666: #666666;
+    --text-FFBA3B: #FFBA3B;
+    --text-F2EFF4: #F2EFF4;
+    --text-000000: #000000;
+    --bg-first: linear-gradient(0deg, #E0480A 0%, #E0480A 100%), linear-gradient(0deg, #EFB93B 0%, #EBA43B 53.63%, #E9973B 100%), #D9D9D9;
+    --bg-second: #4D86DC;
+    --bg-third: #364EC6;
+    --bg-forth: linear-gradient(0deg, #6A3DAD 0%, #6A3DAD 100%), linear-gradient(90deg, #2D367D 0%, #384CB1 100%);
+    --bg-fifth: linear-gradient(0deg, #ED5C83 0%, #ED5C83 100%), linear-gradient(90deg, #2D367D 0%, #384CB1 100%);
+    --bg-sixth: linear-gradient(0deg, #EFB93B 0%, #EFB93B 100%), #D9D9D9;
+
+
+
+}
+
+.fs-2xsm {
+    font-size: var(--fs-2xsm);
+}
+
+.fs-xsm {
+    font-size: var(--fs-xsm);
+}
+
+.fs-sm {
+    font-size: var(--fs-sm);
+}
+
+.fs-xmd {
+    font-size: var(--fs-xmd);
+}
+
+.fs-md {
+    font-size: var(--fs-md);
+}
+
+.fs-lg {
+    font-size: var(--fs-lg);
+}
+
+.fs-xl {
+    font-size: var(--fs-xl);
+}
+
+.fs-xxl {
+    font-size: var(--fs-xxl);
+}
+
+.weight-black {
+    font-weight: var(--weight-black);
+}
+
+.text-ffffff {
+    color: var(--text-ffffff);
+}
+
+.text-32352c {
+    color: var(--text-32352c);
+}
+
+.text-666666 {
+    color: var(--text-666666);
+}
+
+.text-FFBA3B {
+    color: var(--text-FFBA3B);
+}
+
+.text-F2EFF4 {
+    color: var(--text-F2EFF4);
+}
+
+.text-000000 {
+    color: var(--text-000000);
+}
+
+.bg-first {
+    background: var(--bg-first);
+}
+
+.bg-second {
+    background-color: var(--bg-second);
+}
+
+.bg-third {
+    background-color: var(--bg-third);
+}
+
+.bg-forth {
+    background: var(--bg-forth);
+}
+
+.bg-fifth {
+    background: var(--bg-fifth);
+}
+
+.bg-sixth {
+    background: var(--bg-sixth);
+}
+
+/* ======Root End============ */
+.ff-Montserrat {
+    font-family: "Montserrat";
+}
+
+.logo_bg {
+    position: absolute;
+    left: 6%;
+    top: 20px;
+}
+
+.linebox {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: px;
+    z-index: 99;
+}
+
+nav .linebox span {
+    height: 5px;
+    width: 100%;
+    margin-top: 6px;
+    background-color: #ffffff;
+
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    transition: all 300ms linear;
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+select {
+    background:#FFBA3B;
+    border-radius: 165px;
+    border: 1px solid var(--bhjb, #FFF);
+    color: var(--text-ffffff);
+    padding: 7px 5px;
+}
+
+.bg_body {
+    background: var(--04, linear-gradient(180deg, #FFBA3B 0%, #FFA53B 53.15%, #FF983B 100%));
+}
+
+.nav_position {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+}
+
+.shop_position {
+    top: 22%;
+    left: 12%;
+    animation-name: shop;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+
+}
+#scrollBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #313EF7;
+    color: white;
+    cursor: pointer;
+    padding: 19px 20px;
+    border-radius: 56px;
+}
+@keyframes shop {
+    0%{
+        transform: translateY(-40px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+    
+}
+
+.main_heading {
+    top: 25%;
+}
+
+.read_btn {
+    padding: 11px 21px;
+    border-radius: 40px;
+    border: 1px solid var(--bhjb, #FFF);
+
+}
+
+.buy_btn {
+    padding: 11px 21px;
+    border-radius: 40px;
+    background-color: #FFF;
+
+}
+.arrow1{
+    top: 20%;
+    left: 38%;
+    animation-name: arrow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.arrow2{
+    top: 100%;
+    left: 0%;
+    animation-name: arrow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.arrow3{
+    top: -2%;
+    left: 42%;
+    animation-name: arrow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.arrow4{
+    top: 13%;
+    left: 77%;
+    animation-name: arrow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes arrow {
+    0%{
+        transform: rotate(-10deg);
+    }
+    100%{
+        transform: rotate(10deg);
+    }
+    
+}
+.secondsection_head {
+    transform: translateY(-36%);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+.position_relative{
+    position: relative;
+}
+
+.bg_circle {
+    right: 0;
+    top: 20px;
+}
+
+.third1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 370px;
+    height: 287px;
+    margin: auto;
+    background-color: rgba(214, 135, 0, 0.1);
+    background-image: rgba(214, 135, 0, 1);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.2);
+    animation: morphing 10s infinite;
+    overflow: hidden;
+}
+
+.third1:hover {
+    animation-play-state: paused;
+}
+
+@keyframes morphing {
+    0% {
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% box-shadow 15px 15px 50px rgba(0, 0, 0, 0.2);
+    }
+
+    25% {
+        border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%;
+    }
+
+    50% {
+        border-radius: 50% 50% 33% 67% / 55% 27% 73% 45% box-shadow -10px -5px 50px rgba(0, 0, 0, 0.2);
+    }
+
+    75% {
+        border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%;
+    }
+}
+
+@media (max-width:992px) {
+
+    .nav_bar {
+        position: fixed;
+        margin-top: 0px;
+        left: -100%;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        line-height: 30px;
+        flex-direction: column;
+        background: var(--04, linear-gradient(180deg, #FFBA3B 0%, #FFA53B 53.15%, #FF983B 100%));
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        z-index: 99;
+    }
+
+    .overflow_hidden {
+        overflow: hidden;
+    }
+
+    .show {
+        left: 0;
+
+    }
+    .img_header{
+        display: none;
+    }
+    .logo_bg {
+        position: absolute;
+        left: 6%;
+        top: 25px;
+    }
+    .linebox {
+       
+        right: -25px;
+        top: -10px;
+     
+    }    
+    .arrow4{
+        display: none;
+    }
+    .shop_bg{
+        display:none;
+    }
+    .secondsection_head{
+        display: none;
+    }
+    .shop_position{
+        top: 80%;
+        left: 0;
+        animation-play-state: paused;
+    }
+    .position_relative{
+        position: static;
+    }
+}
+@media (max-width:768px){
+    .shop_position{
+        top: 89%;
+    }
 }
