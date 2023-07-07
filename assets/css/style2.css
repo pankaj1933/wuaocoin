@@ -135,6 +135,13 @@
     transition: all 500ms linear;
 }
 
+.whitepaper-bg {
+    background-image: url(/assets/images/png/whitepaper-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .read-white-paper-btn:hover {
     background-color: #FFBA3B;
     color: white;
@@ -238,6 +245,12 @@
     display: inline-block;
 }
 
+.countdown-bg {
+    background-image: url(/assets/images/png/countdown-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .line-height-174 {
     line-height: 174%;
 }
@@ -276,11 +289,10 @@
 
 /* ===============End=============== */
 /* ===========Eight Section============ */
-.bg-color-img {
-    background-image: url(/assets/images/png/bg-orange.png);
-    background-repeat: no-repeat;
+.partner-bg {
+    background-image: url(/assets/images/png/partener-bg.png);
     background-size: cover;
-    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* ==============Section end====== */
@@ -309,10 +321,12 @@ footer ul li a:hover {
 footer ul li a:hover::after {
     transform: scaleX(1);
 }
-hr{
+
+hr {
     color: pink;
     height: 10px;
 }
+
 .social-icon-box {
     width: 30px;
     height: 30px;
