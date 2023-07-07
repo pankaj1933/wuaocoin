@@ -9,15 +9,16 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body class="">
+<body class="overflow-hidden">
   <button onclick="topFunction()" class="fw-normal fs_smm  ff-google-sans" id="scrollBtn" title="Go to top"><img
-    src="./assets/images/svg/globe.svg" alt=""></button>
+    src="./assets/images/svg/toparrow.svg" alt=""></button>
   <div class="overflow-hidden">
     <div id="preloader"
       class="min-vh-100 d-flex align-items-center bg_header justify-content-center  bg_body position-fixed w-100 top-0 start-0 z-3 preloader-transition">
-      <div><img src="./assets/image/svg/preloader.svg" alt="#"></div>
+      <div><img src="assets/images/svg/preloader.svg" alt="#"></div>
     </div>
     <header class="overflow-hidden bg_body">
       <span><img class="position-relative " src="./assets/images/png/headerbg.png" alt=""></span>
@@ -38,7 +39,8 @@
               <li><a onclick="navbartoggle()" href="#"><img src="./assets/images/svg/linkdin.svg" alt=""></a></li>
 
               <li><a href="#">
-                  <select>
+                  <select class="ff-Montserrat fs-xsm fw-semibold text-ffffff"><span><img src="/assets/images/svg/g
+                    " alt=""></span>eng 
                     <option value="eng"> eng</option>
                     <option value="hindi">Hindi</option>
                     <option value="spanish">Spanish</option>
@@ -54,8 +56,8 @@
             </div>
           </div>
         </nav>
-        <div class="row min-vh-100 pb-5 justify-content-between">
-          <div class="col-lg-5 pb-5 position-relative">
+        <div class="row min-vh-1 00 pb-5 justify-content-between">
+          <div data-aos="fade-down-right" class="col-lg-5 pb-5 position-relative">
             <div class="position-absolute main_heading">
               <p class="ff-Montserrat fs-xmd fw-semibold text-ffffff">Welcome to</p>
               <h1 class="ff-Montserrat fs-xxl weight-black text-ffffff ">The Future of E-Commerce</h1>
@@ -68,10 +70,10 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6 pb-5 mt-5 pt-5 mt-lg-0 pt-lg-0  position_relative">
-            <div class="pt-5 mt-5 mt-lg-0 pt-lg-0">
-              <span><img class="shop_bg" src="./assets/images/png/shop_img_bg.png" alt=""></span>
-              <img class="position-absolute shop_position w-100" src="./assets/images/svg/shop.svg" alt="">
+          <div data-aos="fade-down-left" class="col-lg-6 pb-5 mt-5 pt-5 mt-lg-0 pt-lg-0  position_relative">
+            <div class="pt-5 mt-5 mt-lg-0 pt-lg-0 pb-0">
+              <span><img class="shop_bg w-100" src="./assets/images/png/shop_img_bg.png" alt=""></span>
+              <img class="position_abs shop_position w-100" src="./assets/images/svg/shop.svg" alt="">
             </div>
           </div>
         </div>
@@ -84,10 +86,10 @@
       <span><img class="position-absolute arrow4" src="./assets/images/svg/Arrow4.svg" alt=""></span>
       <div class="container-xxl pt-5">
         <div class="row pt-5 mt-5 justify-content-between">
-          <div class="col-lg-6">
+          <div data-aos="fade-down-right" class="col-lg-6">
             <span><img class="position-relative w-100" src="./assets/images/svg/wuaocoinround.svg" alt=""></span>
           </div>
-          <div class="col-lg-5 mt-5 pt-5 ">
+          <div data-aos="fade-down-left" class="col-lg-5 mt-5 pt-5 ">
             <img class="position-absolute bg_circle" src="./assets/images/png/bgcircle.png" alt="">
             <div class="pt-5">
               <h2 class="mt-5 pt-5 text-32352c fs-xl fw-bold ff-Montserrat">Our Project</h2>
@@ -104,20 +106,20 @@
       <div class="container-xxl">
         <h3 class="d-flex justify-content-center text-32352c fs-xl fw-bold ff-Montserrat pb-5">Benefits</h3>
         <div class="row">
-          <div class="col-lg-4">
+          <div class="col-lg-4"data-aos="flip-down">
             <div class="third1"> <img src="./assets/images/png/third1.png" alt=""></div>
             <p class="text-center fs-sm ff-Montserrat fw-normal text-000000 pt-3">Services, Products and Community
               All in one place!
             </p>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4"data-aos="flip-down">
             <div class="third1"> <img src="./assets/images/png/third2.png" alt=""></div>
             <p class="text-center fs-sm ff-Montserrat fw-normal text-000000 pt-3">Selling in crypto will no longer be
               complicated, it will
               be safe and reliable.
             </p>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4"data-aos="flip-down">
             <div class="third1"> <img src="./assets/images/png/third3.png" alt=""></div>
             <p class="text-center fs-sm ff-Montserrat fw-normal text-000000 pt-3">Buying and getting a real discount is
               possible? Join and
@@ -127,9 +129,287 @@
         </div>
       </div>
     </section>
+      <!-- =========Forth Section White paper============== -->
+  <section class="bg-color-img py-5 position-relative">
+    <img class="white-paper-arrow-abs arrow d-none d-sm-block" src="/assets/images/svg/white-paper-arrow.svg"
+      alt="arrow">
+    <img class="arrow-right-abs arrow d-none d-sm-block" src="/assets/images/svg/arrow-right.svg" alt="arrow">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 animation-css" data-aos="zoom-in-left">
+          <div>
+            <img class="w-100" src="/assets/images/png/white-paper-1.png" alt="mobile-cart">
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mt-4" data-aos="zoom-in">
+          <h2 class="ff-Montserrat text-ffffff fs-xl fw-bold text-center mb-3">Whitepaper</h2>
+          <p class="ff-Montserrat text-ffffff fs-sm fw-semibold text-center mb-5 pb-2">We want you to know our vision we
+            leave you
+            our whitepaper and now be a part of the digital transformation.
+          </p>
+          <div class="d-flex justify-content-center align-items-center">
+            <button class="ff-Montserrat text-FFBA3B border-0 read-white-paper-btn fs-xsm fw-semibold">Read
+              WhitePaper</button>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 animation-css mt-2" data-aos="zoom-in-right">
+          <div>
+            <img class="w-100" src="/assets/images/png/white-papaer-2.png" alt="white-papaer-2">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- =========End================== -->
+  <!-- ===============Fifth Section Roadmap=========== -->
+  <section class="my-lg-5 py-5 position-relative ">
+    <img class="roadmap-left-abs" src="/assets/images/png/roadmap-left-shadow.png" alt="shadow">
+    <img class="roadmap-right-abs" src="/assets/images/png/roadmap-right-shadow.png" alt="shadow">
+    <img class="roadmap-arrow-abs arrow d-none d-sm-block" src="/assets/images/png/roadmap-arrow.png" alt="arrow">
+    <div class="roadmap-container mb-lg-5">
+      <h2 class="ff-Montserrat fs-xl fw-bold text-32352c text-center" data-aos="zoom-in">RoadMap</h2>
+      <p class="ff-Montserrat fw-normal text-000000 fs-sm text-center" data-aos="fade-right">Knowing our values,
+        understanding the business
+        idea and then, gradually, <span class=" d-lg-block">presenting the plans to the public is
+          our way of doing things.</span></p>
+      <div class="d-flex justify-content-center mt-5 pt-3 mb-5 pb-2">
+        <img class="w-sm-100" src="/assets/images/png/roadmap.png" alt="roadmap">
+      </div>
+      <div class="d-flex gap-4 my-lg-5 flex-wrap flex-xl-nowrap">
+        <div class="roadmap-box bg-sixth p-2 opacity-75" data-aos="flip-left" data-aos-duration="1200">
+          <h3 class="ps-1 ff-Montserrat fs-md text-ffffff fw-bold opacity-50 mb-3 pb-1">01</h3>
+          <p class="ps-1 pe-4 ff-Montserrat text-ffffff fs-xmd fw-bold">Organizational concept (creations)
+          </p>
+        </div>
+        <div class="roadmap-box bg-first p-2 opacity-75" data-aos="flip-left" data-aos-delay="300"
+          data-aos-duration="1200">
+          <h3 class="ps-1 ff-Montserrat fs-md text-ffffff fw-bold opacity-50 mb-3 pb-1">02</h3>
+          <p class=" ps-1 text-ffffff fs-xmd fw-bold">Directional Process (Actions)</p>
+        </div>
+        <div class="roadmap-box bg-second p-2 opacity-75" data-aos="flip-left" data-aos-delay="600"
+          data-aos-duration="1200">
+          <h3 class="ps-1 ff-Montserrat fs-md text-ffffff fw-bold opacity-50 mb-3 pb-1">03</h3>
+          <p class="ps-1 ff-Montserrat text-ffffff fs-xmd fw-bold">Operational Development (technical team)
+          </p>
+        </div>
+        <div class="roadmap-box bg-third p-2 opacity-75" data-aos="flip-left" data-aos-delay="900"
+          data-aos-duration="1200">
+          <h3 class="ps-1 ff-Montserrat fs-md text-ffffff fw-bold opacity-50 mb-3 pb-1">04</h3>
+          <p class="ps-1 pe-4 ff-Montserrat text-ffffff fs-xmd fw-bold">Strategic Opportunities (alliances)
+          </p>
+        </div>
+        <div class="roadmap-box bg-forth p-2 opacity-75" data-aos="flip-left" data-aos-delay="1200"
+          data-aos-duration="1200">
+          <h3 class="ps-1 ff-Montserrat fs-md text-ffffff fw-bold opacity-50 mb-3 pb-1">05</h3>
+          <p class="ps-1 pe-4 ff-Montserrat text-ffffff fs-xmd fw-bold">Stakeholders (benefits)</p>
+        </div>
+        <div class="roadmap-box bg-fifth p-2 opacity-75" data-aos="flip-left" data-aos-delay="1500"
+          data-aos-duration="1200">
+          <h3 class="ff-Montserrat fs-md text-ffffff fw-bold opacity-50 mb-3 pb-1">06</h3>
+          <p class=" ff-Montserrat text-ffffff fs-xmd fw-bold">Human Identity (social contribution)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===========End======================= -->
+  <!-- =========Sixth Section Countdown================ -->
+  <section class="bg-color-img py-5 mt-lg-5">
+    <div class="container">
+      <h2 class="ff-Montserrat text-ffffff fs-lg fw-bold text-center mb-5 pb-2 line-height-174 mt-5" data-aos="zoom-in">
+        Public Sale 5% in
+        ERC20
+        & BEP20, <span class="d-lg-block">100% for the Community</span></h2>
+      <div class="d-flex align-items-center gap-sm-3 gap-2 justify-content-center" id="countdown-container">
+        <div class="text-center" data-aos="flip-down"  data-aos-duration="1500" data-aos-delay="300">
+          <h2 class="fs-xl fw-bold ff-Montserrat text-ffffff time-box" id="days">86</h2>
+          <p class="ff-Montserrat fw-medium text-ffffff fs-sm">Days</p>
+        </div>
+        <p class="ff-Montserrat fw-normal fs-xl text-ffffff line-height-174 mb-5">:</p>
+        <div class="text-center" data-aos="flip-down"  data-aos-duration="1500" data-aos-delay="700">
+          <h2 class="fs-xl fw-bold ff-Montserrat text-ffffff time-box" id="hours">05</h2>
+          <p class="ff-Montserrat fw-medium text-ffffff fs-sm">Hours</p>
+        </div>
+        <p class="ff-Montserrat fw-normal fs-xl text-ffffff line-height-174 mb-5">:</p>
+        <div class="text-center" data-aos="flip-down"  data-aos-duration="1500" data-aos-delay="1400">
+          <h2 class="fs-xl fw-bold ff-Montserrat text-ffffff time-box" id="minutes">20</h2>
+          <p class="ff-Montserrat fw-medium text-ffffff fs-sm">Minute</p>
+        </div>
+        <p class="ff-Montserrat fw-normal fs-xl text-ffffff line-height-174 mb-5">:</p>
+        <div class="text-center" data-aos="flip-down"  data-aos-duration="1500" data-aos-delay="2100">
+          <h2 class="fs-xl fw-bold ff-Montserrat text-ffffff time-box" id="seconds">37</h2>
+          <p class="ff-Montserrat fw-medium text-ffffff fs-sm">Second</p>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center mt-5 mb-5 pb-3">
+        <button class="ff-Montserrat fw-semibold text-FFBA3B fs-xsm border-0 buy-wuao">BUY WUAO</button>
+      </div>
+    </div>
+  </section>
+  <!-- ============End============ -->
+  <!-- ===========Seventh Section tokenomics============ -->
+  <section class="position-relative mb-5">
+    <img class="tokenomics-left-abs" src="/assets/images/png/tokenomics-shadow-left.png" alt="shadow">
+    <img class="tokenomics-right-abs" src="/assets/images/png/tokenomics-shadow-right.png" alt="shadow">
+    <img class="tokenomics-arrow-abs arrow d-none d-sm-block" src="/assets/images/svg/tokenomics-arrow.svg" alt="arrow">
+    <div class="container">
+      <h2 class="ff-Montserrat fw-bold fs-xl text-32352c text-center mb-5 mt-lg-5 pt-lg-5" data-aos="zoom-in">Tokenomics</h2>
+      <div class="position-relative d-flex justify-content-center mb-lg-5 pb-5 flex-column flex-xl-row">
+        <img src="/assets/images/png/tokenomics-img.png" alt="Tokenomics">
+        <div class="d-flex justify-content-sm-between flex-sm-row flex-column">
+          <div class="">
+            <h2 data-aos="fade-right" class="ff-Montserrat text-32352c fw-bold fs-xmd team-abs me-3 mb-4"><img class="d-xl-none me-2"
+                src="/assets/images/svg/a.svg" alt="a">Team</h2>
+            <h2 data-aos="fade-left" class="ff-Montserrat text-32352c fw-bold fs-xmd community-abs me-3 mb-4"><img class="d-xl-none me-2"
+                src="/assets/images/svg/b.svg" alt="b">Buyers/holders/ <span
+                class="d-block ms-xl-0 ms-5 ps-3 ps-xl-0">community</span></h2>
+          </div>
+          <div class="">
+            <h2 data-aos="fade-right" class="ff-Montserrat text-32352c fw-bold fs-xmd founder-abs text-xl-end me-3 mb-4"><img
+                class="d-xl-none me-2" src="/assets/images/svg/c.svg" alt="c">Subdivided into <span
+                class="d-block ms-xl-0 ms-5 ps-3 ps-xl-0">5%
+                Founders</span></h2>
+            <h2 data-aos="fade-right" class="ff-Montserrat text-32352c fw-bold fs-xmd workers-abs"><img class="d-xl-none me-2"
+                src="/assets/images/svg/d.svg" alt="d">Workers</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- =======End============================= -->
+  <!-- ===========Eight Section Partnership ============ -->
+  <section class="bg-color-img py-5">
+    <div class="container">
+      <h2 class="ff-Montserrat text-ffffff fw-bold fs-xl text-center mb-5" data-aos="zoom-in">Partnership</h2>
+      <div class="d-flex justify-content-center" data-aos="zoom-in">
+        <img class="w-sm-100" src="/assets/images/png/paternship.png" alt="Partnership">
+      </div>
+    </div>
+  </section>
+  <!-- =============End================== -->
+  <!-- ========Footer============== -->
+  <footer class="pt-5 position-relative" id="about">
+    <img class="left-shadow-abs" src="/assets/images/png/footer-left-shadow.png" alt="shadow">
+    <img class="right-shadow-abs" src="/assets/images/png/footer-right-shadow.png" alt="shadow">
+    <img class="arrow-abs arrow d-none d-sm-block" src="/assets/images/png/footer-arrow.png" alt="arrow">
+    <div class="container mt-5 pt-2">
+      <div class="row">
+        <div class="col-12 col-lg-6 mb-lg-0 mb-5">
+          <div class="mb-4">
+            <img src="/assets/images/svg/logoheader.svg" alt="logo">
+          </div>
+          <p class="text-32352c fs-2xsm fw-normal ff-Montserrat line-height mb-4">Welcome to The Future of the <span
+              class="d-lg-block">Market. The
+              world's first Global</span> TechFi Platform</p>
+          <div class="d-flex">
+            <a class=" social-icon-box" href="http://discord.com">
+              <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12.6483 1.77512C11.7062 1.33596 10.6862 1.01721 9.6237 0.83304C9.61438 0.832742 9.60512 0.834491 9.59655 0.838162C9.58798 0.841834 9.58033 0.847339 9.57412 0.854291C9.44662 1.08804 9.29787 1.39262 9.1987 1.62637C8.07174 1.45637 6.92566 1.45637 5.7987 1.62637C5.69953 1.38554 5.55078 1.08804 5.4162 0.854291C5.40912 0.840124 5.38787 0.83304 5.36662 0.83304C4.30412 1.01721 3.2912 1.33596 2.34203 1.77512C2.33495 1.77512 2.32787 1.78221 2.32078 1.78929C0.394116 4.67221 -0.137134 7.47721 0.12495 10.2539C0.12495 10.268 0.132033 10.2822 0.1462 10.2893C1.4212 11.2243 2.64662 11.791 3.85787 12.1664C3.87912 12.1735 3.90037 12.1664 3.90745 12.1522C4.19078 11.7626 4.44578 11.3518 4.66537 10.9197C4.67953 10.8914 4.66537 10.863 4.63703 10.856C4.23328 10.7001 3.85078 10.516 3.47537 10.3035C3.44703 10.2893 3.44703 10.2468 3.46828 10.2255C3.5462 10.1689 3.62412 10.1051 3.70203 10.0485C3.7162 10.0343 3.73745 10.0343 3.75162 10.0414C6.18828 11.1535 8.8162 11.1535 11.2245 10.0414C11.2387 10.0343 11.2599 10.0343 11.2741 10.0485C11.352 10.1122 11.4299 10.1689 11.5079 10.2326C11.5362 10.2539 11.5362 10.2964 11.5008 10.3105C11.1324 10.5301 10.7429 10.7072 10.3391 10.863C10.3108 10.8701 10.3037 10.9055 10.3108 10.9268C10.5374 11.3589 10.7924 11.7697 11.0687 12.1593C11.0899 12.1664 11.1112 12.1735 11.1324 12.1664C12.3508 11.791 13.5762 11.2243 14.8512 10.2893C14.8654 10.2822 14.8724 10.268 14.8724 10.2539C15.1841 7.04512 14.3554 4.26137 12.6766 1.78929C12.6695 1.78221 12.6624 1.77512 12.6483 1.77512ZM5.0337 8.56096C4.30412 8.56096 3.69495 7.88804 3.69495 7.05929C3.69495 6.23054 4.28995 5.55762 5.0337 5.55762C5.78453 5.55762 6.37953 6.23762 6.37245 7.05929C6.37245 7.88804 5.77745 8.56096 5.0337 8.56096ZM9.97078 8.56096C9.2412 8.56096 8.63203 7.88804 8.63203 7.05929C8.63203 6.23054 9.22703 5.55762 9.97078 5.55762C10.7216 5.55762 11.3166 6.23762 11.3095 7.05929C11.3095 7.88804 10.7216 8.56096 9.97078 8.56096Z"
+                  fill="white" />
+              </svg>
+            </a>
+            <a class="social-icon-box ms-3 icon-delay-1" href="http://twitter.com">
+              <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13.8506 1.62022C13.3426 1.83936 12.7898 1.99708 12.2203 2.0585C12.8115 1.70727 13.2543 1.15239 13.4654 0.497956C12.9107 0.827977 12.3029 1.05939 11.6692 1.18194C11.4043 0.898762 11.0839 0.673169 10.728 0.519218C10.3721 0.365268 9.98835 0.28626 9.6006 0.287116C8.03175 0.287116 6.77003 1.5588 6.77003 3.11934C6.77003 3.33848 6.79659 3.55762 6.83976 3.76846C4.49064 3.64561 2.39552 2.52335 1.00265 0.805085C0.748853 1.23858 0.615855 1.73216 0.617492 2.23448C0.617492 3.21729 1.1172 4.08389 1.87921 4.59356C1.43015 4.57588 0.991597 4.45245 0.599231 4.23331V4.26817C0.599231 5.64444 1.57208 6.78497 2.86866 7.04727C2.62522 7.11051 2.37478 7.14286 2.12325 7.14356C1.93898 7.14356 1.76466 7.1253 1.58868 7.1004C1.94728 8.22266 2.99152 9.0378 4.23497 9.06436C3.26212 9.82637 2.04357 10.2746 0.720422 10.2746C0.48302 10.2746 0.263879 10.2663 0.036438 10.2398C1.29152 11.0449 2.78068 11.5098 4.38439 11.5098C9.59064 11.5098 12.4395 7.19669 12.4395 3.45303C12.4395 3.33018 12.4395 3.20733 12.4312 3.08448C12.9823 2.68106 13.4654 2.18135 13.8506 1.62022Z"
+                  fill="white" />
+              </svg>
+            </a>
+            <a class="social-icon-box ms-3 icon-delay-2" href="http://linkedin.com">
+              <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M14.9856 1.27418L12.7411 11.8593C12.5716 12.6063 12.1302 12.7922 11.5028 12.4405L8.08257 9.92027L6.43251 11.5076C6.24976 11.6904 6.09729 11.8429 5.74507 11.8429L5.99104 8.35999L12.3294 2.63258C12.6051 2.38715 12.2694 2.25061 11.9012 2.49658L4.06526 7.43083L0.691822 6.37471C-0.0418344 6.14574 -0.0551155 5.64105 0.844822 5.28883L14.0395 0.205302C14.6504 -0.0236667 15.1849 0.341302 14.9856 1.27471V1.27418Z"
+                  fill="white" />
+              </svg>
+            </a>
+            <a class="social-icon-box ms-3 icon-delay-3" href="http://linkedin.com">
+              <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="mask0_0_2320" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="15"
+                  height="14">
+                  <path
+                    d="M1.61184 2.87179C2.42573 2.87179 3.08552 2.22892 3.08552 1.4359C3.08552 0.642873 2.42573 0 1.61184 0C0.797944 0 0.138153 0.642873 0.138153 1.4359C0.138153 2.22892 0.797944 2.87179 1.61184 2.87179Z"
+                    fill="white" />
+                  <path
+                    d="M0.138153 5.02563H3.08552V14H0.138153V5.02563ZM6.03289 8.43589V14H8.61184V8.97435C8.61184 8.07692 9.16447 7.35897 10.0855 7.35897C11.0066 7.35897 11.5592 8.2564 11.5592 8.97435V14H14.1382V8.43589C14.1382 7.35897 12.8487 5.02563 10.0855 5.02563C7.32236 5.02563 6.03289 7.35897 6.03289 8.43589Z"
+                    fill="white" />
+                </mask>
+                <g mask="url(#mask0_0_2320)">
+                  <path d="M-1.70389 -1.43604H15.9803V15.7947H-1.70389V-1.43604Z" fill="white" />
+                </g>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 pb-4">
+          <div class="row">
+            <div class=" col-md-6 col-lg-4 col-6">
+              <h2 class="ff-Montserrat fw-semibold fs-sm text-32352c mb-3">Documents</h2>
+              <ul class="p-0">
+                <li class="mb-2">
+                  <a class="footer" href="#">WhitePaper</a>
+                </li>
+                <li class="mb-2">
+                  <a class="footer" href="#">Customers</a>
+                </li>
+                <li>
+                  <a class="footer" href="#">Business</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-lg-4 col-6">
+              <h2 class="ff-Montserrat fw-semibold fs-sm text-32352c mb-3">Quick Links</h2>
+              <ul class="p-0">
+                <li class="mb-2">
+                  <a class="footer" href="#">Home</a>
+                </li>
+                <li class="mb-2">
+                  <a class="footer" href="#">About Us</a>
+                </li>
+                <li class="mb-2">
+                  <a class="footer" href="#">Benefits</a>
+                </li>
+                <li class="mb-2">
+                  <a class="footer" href="#">ICO</a>
+                </li>
+                <li class="mb-2">
+                  <a class="footer" href="#">RoadMap</a>
+                </li>
+                <li class="mb-2">
+                  <a class="footer" href="#">Tokenomics</a>
+                </li>
+                <li>
+                  <a class="footer" href="#">Partnership</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-lg-4 col-6">
+              <h2 class="ff-Montserrat fw-semibold fs-sm text-32352c mb-3">Company</h2>
+              <ul class="p-0">
+                <li class="mb-2">
+                  <a class="footer" href="#">WUAOCOIN</a>
+                </li>
+                <li>
+                  <a class="footer" href="#">WUAOSHOP</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="mt-5 mb-4 pb-0">
+    <p class="ff-Montserrat fw-normal fs-xsm text-32352c text-center pb-0">© Copyright 2022 - Wuaocoin</p>
+  </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init({
+          once: true,
+        });
+        
+      </script>
     <!-- navbar js  -->
     <script>
       const nav = document.getElementById("nav_click")
@@ -170,6 +450,55 @@
         document.documentElement.scrollTop = 0;
       }
     </script>
+    <script>
+      // Get the countdown container element
+      const countdownContainer = document.getElementById("countdown-container");
+  
+      // Set the target date and time (adjust it according to your needs)
+      const targetDate = new Date("2023-07-07T23:59:59").getTime();
+  
+      // Function to initialize the countdown
+      function startCountdown() {
+        // Get the current date and time
+        const currentDate = new Date().getTime();
+  
+        // Calculate the time remaining
+        const timeRemaining = targetDate - currentDate;
+  
+        // Calculate and update the days, hours, minutes, and seconds
+        const daysElement = document.getElementById("days");
+        const hoursElement = document.getElementById("hours");
+        const minutesElement = document.getElementById("minutes");
+        const secondsElement = document.getElementById("seconds");
+  
+        // Calculate the days, hours, minutes, and seconds remaining
+        let days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+        let hours = Math.floor(
+          (timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        let minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+        days = String(days).padStart(2, "0");
+        hours = String(hours).padStart(2, "0");
+        minutes = String(minutes).padStart(2, "0");
+        seconds = String(seconds).padStart(2, "0");
+        // Update the HTML elements with the calculated values
+        daysElement.textContent = days;
+        hoursElement.textContent = hours;
+        minutesElement.textContent = minutes;
+        secondsElement.textContent = seconds;
+  
+        // TODO: Implement the countdown logic to update the timer every second
+  
+      }
+  
+      // Update the countdown timer every second
+      setInterval(startCountdown, 1000);
+  
+      // ...
+  
+    </script>
+
 
 </body>
 
