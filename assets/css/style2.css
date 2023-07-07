@@ -309,7 +309,10 @@ footer ul li a:hover {
 footer ul li a:hover::after {
     transform: scaleX(1);
 }
-
+hr{
+    color: pink;
+    height: 10px;
+}
 .social-icon-box {
     width: 30px;
     height: 30px;
