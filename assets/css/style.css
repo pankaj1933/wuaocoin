@@ -173,7 +173,7 @@ nav .linebox span {
 }
 
 select {
-    background:#FFBA3B;
+    background: #FFBA3B;
     border-radius: 165px;
     border: 1px solid var(--bhjb, #FFF);
     color: var(--text-ffffff);
@@ -189,8 +189,10 @@ select {
     top: 40px;
     right: 50px;
 }
-.shop_bg{
-    right: 0;
+
+.shop_bg {
+    width: 840px;
+    height: 760px;
 }
 
 .shop_position {
@@ -200,9 +202,10 @@ select {
     animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    
+
 
 }
+
 #scrollBtn {
     display: flex;
     justify-content: center;
@@ -219,35 +222,80 @@ select {
     padding: 13px 20px;
     border-radius: 56px;
 }
+
 @keyframes shop {
-    0%{
+    0% {
         transform: translateY(-40px);
     }
-    100%{
+
+    100% {
         transform: translateY(0px);
     }
-    
+
 }
 
 .main_heading {
     top: 25%;
 }
 
+.btn-secondary {
+    --bs-btn-color: #fff;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: transparent;
+    --bs-btn-hover-border-color: #fff;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: transparent;
+    --bs-btn-active-border-color: #fff;
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #fff;
+}
+
+.btn {
+    --bs-btn-font-family: "Montserrat";
+    --bs-btn-font-size: var(--fs-xsm);
+    --bs-btn-font-weight: 400;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: transparent;
+    padding: 5px 8px;
+    --bs-btn-border-color: ;
+    --bs-btn-border-radius: 22px;
+    --bs-btn-hover-border-color: #FFF;
+}
 
 .read_btn {
     padding: 11px 21px;
     border-radius: 40px;
     border: 1px solid var(--bhjb, #FFF);
+    transition: all 1s linear;
 
+}
+.read_btn:hover{
+    transform: translateY(-5px);
+}
+ .nav_hover{
+    transition: all .3s linear;
+
+}
+ .nav_hover:hover{
+    transform: translateY(-5px);
 }
 
 .buy_btn {
     padding: 11px 21px;
     border-radius: 40px;
+    color:var(--text-FFBA3B) ;
     background-color: #FFF;
+    transition: all 500ms linear;
 
 }
-.arrow1{
+.buy_btn:hover{
+    background-color: #FFBA3B;
+    color: white;
+}
+
+
+.arrow1 {
     top: 20%;
     left: 38%;
     animation-name: arrow;
@@ -255,7 +303,8 @@ select {
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
-.arrow2{
+
+.arrow2 {
     top: 100%;
     left: 0%;
     animation-name: arrow;
@@ -263,7 +312,8 @@ select {
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
-.arrow3{
+
+.arrow3 {
     top: -2%;
     left: 42%;
     animation-name: arrow;
@@ -271,7 +321,8 @@ select {
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
-.arrow4{
+
+.arrow4 {
     top: 13%;
     left: 77%;
     animation-name: arrow;
@@ -279,32 +330,37 @@ select {
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
+
 @keyframes arrow {
-    0%{
+    0% {
         transform: rotate(-10deg);
     }
-    100%{
+
+    100% {
         transform: rotate(10deg);
     }
-    
+
 }
+
 .secondsection_head {
-    transform: translateY(-36%);
+    margin-top: -16%;
     background-repeat: no-repeat;
     background-size: cover;
 
 
 }
-.position_relative{
+
+.position_relative {
     position: relative;
 }
-.position_abs{
+
+.position_abs {
     position: absolute;
 }
 
 .bg_circle {
-    right: -20%;
-    top: 20px;
+    right: 0;
+    top: -100px;
 }
 
 .third1 {
@@ -607,6 +663,19 @@ footer ul li a:hover::after {
         right: 54%;
         bottom: 5%;
     }
+
+    .shop_bg {
+        width: 1231px;
+        height: 875px;
+    }
+
+}
+
+@media (max-width:1200px) {
+    .secondsection_head {
+        display: none;
+    }
+
 }
 
 @media (max-width:992px) {
@@ -637,52 +706,60 @@ footer ul li a:hover::after {
         left: 0;
 
     }
-    .img_header{
+
+    .img_header {
         display: none;
     }
+
     .logo_bg {
         position: absolute;
         left: 6%;
         top: 25px;
     }
+
     .linebox {
-       
+
         right: -25px;
         top: -10px;
-     
-    }    
-    .arrow4{
+
+    }
+
+    .arrow4 {
         display: none;
     }
-    .shop_bg{
-        display:none;
-    }
-    .secondsection_head{
+
+    .shop_bg {
         display: none;
     }
-    .shop_position{
+
+    .shop_position {
         top: 40%;
         left: 0;
         animation-play-state: paused;
     }
-    .position_relative{
+
+    .position_relative {
         position: static;
     }
-    .position_abs{
+
+    .position_abs {
         position: static;
         padding-top: 90px;
     }
 }
-@media (max-width:768px){
-    .shop_position{
+
+@media (max-width:768px) {
+    .shop_position {
         top: 70%;
     }
+
     :root {
         /* font-size */
         --fs-xl: 40px;
         --fs-xxl: 55px;
     }
 }
+
 @media (max-width:576px) {
     .w-sm-100 {
         width: 100%;
